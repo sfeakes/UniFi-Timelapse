@@ -9,7 +9,7 @@ This was never developed for public consumption, so it’s messy with not much e
 Log into the camera and enable "Enable Anonymous Snapshot", then go to `http://camera.ip.address/Snap.jpeg` and check you see a still image. If not, fix what’s wrong as nothing else will work.
 
 Place the two bash scripts into a directory of your choice.
-Edit ‘getVidSnaps’ and change 'SNAP_BASE="/mnt/hgfs/Disk2/UniFi-Snaps”’ to a directory of your choice. All jpeg images will be stored here under the camera name.
+Edit `getVidSnaps` and change `SNAP_BASE="/mnt/hgfs/Disk2/UniFi-Snaps”` to a directory of your choice. All jpeg images will be stored here under the camera name.
 At the bottom of the file, simply change / add the lines for each camera in the format. `getSnap “Camera Name" http://xxx.xxx.xxx.xxx/snap.jpeg`. Obviously change `camera name` to the name of your camera and xxx.xxx.xxx.xxx to the camera’s IP address.
 
 Setup a cron job to execute that script every time you want to save an image.
