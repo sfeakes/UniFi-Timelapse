@@ -9,9 +9,13 @@ This was never developed for public consumption, so it’s messy with not much e
 Log into the camera and enable "Enable Anonymous Snapshot", then go to `http://camera.ip.address/Snap.jpeg` and check you see a still image. If not, fix what’s wrong as nothing else will work.
 
 Place the bash scripts into a directory of your choice.
-Edit `unifi-timelapse.sh`
+Edit ```unifi-timelapse.sh```
+
 Change the below to a directory of your choice. All jpeg images will be stored here under the camera name.
-```SNAP_BASE="/mnt/hgfs/Disk2/UniFi-Snaps”``` 
+
+```
+SNAP_BASE="/mnt/hgfs/Disk2/UniFi-Snaps”
+``` 
 
 Change the below to the IP address and names of your cameras
 ```
