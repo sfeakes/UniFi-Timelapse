@@ -31,7 +31,9 @@ Now check the script will save snaps :-
 
 That should save a still image to the directry lieted in the `SNAP_BASE` variable. If it worked setup a cron job to execute that script every time you want to save an image.
 This example is crontab to save an image every minute
-```*/1 * * * * /path/to/script/unifi-timelapse savesnap "Front Door" "Driveway"```
+```
+*/1 * * * * /path/to/script/unifi-timelapse savesnap "Front Door" "Driveway"
+```
 
 Then every time you want to make a video, simply execute
 ```
