@@ -47,7 +47,7 @@ getSnap() {
 
   log savingSnap "$2" to "$snapFile" 
 
-  wget --quiet -O "$snapFile" "$2"
+  curl --silent --show-error --connect-timeout 10 -o "$snapFile" "$2"
 }
 
 createMovie()
