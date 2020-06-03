@@ -37,6 +37,6 @@ This example is crontab to save an image every minute
 
 Then every time you want to make a video, simply execute
 ```
-unifi-timelapse.sh “camera name” today
+unifi-timelapse.sh createvideo “camera name” today
 ```
 That will create a time-lapse of all todays images.  Options are `today` `yesterday` `all` `file` hopefully that’s self explanatory. The `file` option should be a text file with a list of the images you want included, one per line.
